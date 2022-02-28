@@ -8,9 +8,9 @@ let default_size = 16
 function size()
 {
     const n = prompt("please enter the number of boxes you want per line in your drawing board")
-    if(n !== NaN)
+    if(n !== "")
     return n
-    else return default_size
+    else return 16
 }
 function creatediv()
 {
