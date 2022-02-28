@@ -7,8 +7,10 @@ const resetbtn = document.getElementById('reset')
 let default_size = 16
 function size()
 {
-    const n = prompt("please enter the number of boxes you want in your drawing board")
+    const n = prompt("please enter the number of boxes you want per line in your drawing board")
+    if(n !== NaN)
     return n
+    else return default_size
 }
 function creatediv()
 {
